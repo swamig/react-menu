@@ -144,7 +144,10 @@ var Menu = module.exports = React.createClass({
         onBlur={this.handleBlur}
       >
         {this.renderTrigger()}
-        {this.renderMenuOptions()}
+
+        <div className='react_menu_options'>
+          {this.renderMenuOptions()}
+        </div>
       </div>
     )
   }
