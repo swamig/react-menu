@@ -132,7 +132,7 @@ var Menu = module.exports = React.createClass({
         }
       }.bind(this));
     }
-    return options;
+    return <div>{options}</div>;
   },
 
 
@@ -145,9 +145,7 @@ var Menu = module.exports = React.createClass({
       >
         {this.renderTrigger()}
 
-        <div className='react_menu_options'>
-          {this.renderMenuOptions()}
-        </div>
+        {this.renderMenuOptions()}
       </div>
     )
   }
