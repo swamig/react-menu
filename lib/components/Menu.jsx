@@ -132,7 +132,7 @@ var Menu = module.exports = React.createClass({
         }
       }.bind(this));
     }
-    return <div>{options}</div>;
+    return options;
   },
 
 

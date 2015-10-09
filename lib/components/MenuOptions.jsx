@@ -100,7 +100,9 @@ var MenuOptions = module.exports = React.createClass({
         className={this.buildName()}
         onKeyDown={this.handleKeys}
       >
-        {this.renderOptions()}
+        <div>
+          {this.renderOptions()}
+        </div>
       </div>
     )
   }
